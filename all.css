@@ -58,6 +58,7 @@ table {
 body{
     font-family:"Bruno Ace SC", sans-serif;
 	line-height: 1.5;
+	color: #FFFFFF;
 
 
 
@@ -70,7 +71,20 @@ body{
 
 a{
 	text-decoration: none;
-	color: #D1D1D1;
+
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.w-50{
+	width: 50%;
+}
+.ml-a{
+	margin-left: auto;
 }
 
 .pt-10{
@@ -81,19 +95,43 @@ a{
 	padding-bottom: 40px;
 }
 
+.pt-40{
+	padding-top: 160px;
+}
+
+.pb-40{
+	padding-bottom: 160px;
+}
+
+
+
+
 .bg-black{
 	background: #000000;
-
 }
+
+.d-f{
+	display: flex;
+}
+
+.g-6{
+	gap: 24px;
+}
+
 
 /* nav */
 
 
 .nav-list{
-	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	
 }
+
+.nav-list a{
+	color: #D1D1D1;
+}
+
 
 .nav-list-btn{
 	display: block;
@@ -103,8 +141,43 @@ a{
 
 
 /* header */
+.header-img{
+	padding-top: 72px;
+	padding-bottom: 32px;
 
+}
+.header-text{
+	margin-top: 232px;
+	margin-bottom: 192px;
+}
+.header-title{
+	font-size: 64px;
+	
+}
 
+.header-subtitle{
+	font-size: 128px;
+	color: #00FFA3;
+	font-family: Bruno Ace SC;
+
+}
+
+.header-btn {
+	background:#FFFFFF;
+	width: 185px;
+	border-radius: 32px;
+	justify-content: center;
+	gap: 4px;
+	padding: 12px 24px;
+	
+}
+
+eader-btn a{
+	display: block;
+	
+	
+}
+	
 
 
 
@@ -112,8 +185,23 @@ a{
 
 /* intro */
 
+.intro{
+	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true);
+	width: 100%;
+	
+	
+}
 
 
+.intro-content-text{
+	width: 526px;
+	
+
+}
+
+.intro-content-img{
+	width: 746px;
+}
 
 
 
