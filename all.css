@@ -52,6 +52,8 @@ table {
 
 *,*::before,*::after{
     box-sizing: border-box;
+	outline: rgb(243, 239, 239) solid 3px;
+	
 
 }
 
@@ -59,6 +61,8 @@ body{
     font-family:"Bruno Ace SC", sans-serif;
 	line-height: 1.5;
 	color: #FFFFFF;
+	
+	
 
 
 
@@ -75,7 +79,7 @@ a{
 }
 
 img{
-	max-width: 100%;
+	/*max-width: 100%;*/
 	height: auto;
 	display: block;
 }
@@ -103,6 +107,9 @@ img{
 	padding-bottom: 160px;
 }
 
+.fz-16{
+	font-size: 64px;
+}
 
 
 
@@ -112,6 +119,10 @@ img{
 
 .d-f{
 	display: flex;
+}
+
+.jc-sb{
+	justify-content: space-between;
 }
 
 .g-6{
@@ -150,10 +161,7 @@ img{
 	margin-top: 232px;
 	margin-bottom: 192px;
 }
-.header-title{
-	font-size: 64px;
-	
-}
+
 
 .header-subtitle{
 	font-size: 128px;
@@ -195,25 +203,88 @@ eader-btn a{
 
 .intro-content-text{
 	width: 526px;
-	
+}
 
+.intro-p{
+	font-size: 24px;
+	padding-top: 36px;
+	padding-bottom: 32px;
 }
 
 .intro-content-img{
 	width: 746px;
 }
 
+.intro-content-img img{
+	width:100% ;
+	
+}
 
 
-/* intro */
 
 
 /* about */
+.about{
+	color:#15161D ;
+}
+
+.about-list{
+	flex-wrap:wrap ;
+	padding-top: 46px; /*206px-160px(about-text的padding)*/
+	padding-bottom: 46px;
+	
+}
+
+.about-text{
+	width: 526px;
+}
+
+.about-list-item{
+	width: 306px;
+}
+
+.about-h4{
+	font-size: 20px;
+
+}
+
+.about-text h3{
+	font-size: 64px;
+}
+
+.about-text p{
+	font-size: 24px;
+}
 
 
 
 /* contract */
 
+.contract{
+	background:linear-gradient(to bottom,#050014 100%, #01021EE3 89%);
+	padding-top: 127px;
+	padding-bottom: 127px;
+}
+
+.contract-text img{
+	width: 100px;
+	height: 100px;
+	
+	
+}
+.contract-text{
+	gap: 16px;
+	align-items: center;
+}
+.contract-text p{
+	font-size: 64px;
+
+}
+.contract-img {
+	gap: 20px;
+}
+
+s
 
 
 
