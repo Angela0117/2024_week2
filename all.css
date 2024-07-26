@@ -52,7 +52,7 @@ table {
 
 *,*::before,*::after{
     box-sizing: border-box;
-	outline: rgb(243, 239, 239) solid 3px;
+	/*outline: rgb(243, 239, 239) solid 3px;*/
 	
 
 }
@@ -291,13 +291,40 @@ eader-btn a{
 	color: #000000;
 }
 
+.project-title{
+	margin-left: 550px;
+	margin-top: 16px;
+	
+
+}
+
+.project-content-text{
+	margin-bottom: 28px;
+
+}
 
 
+.project-content-p{
+	flex-direction: column;
+}
 
+.project-content-btn{
+	width: 185px;
+	border-radius: 32px;
+	background: #000000;
+	gap: 4px;
 
+}
 
+.project-content-btn a{
+	display: block;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 24px;
+	color: #FFFFFF;
 
-
+	
+}
 
 
 /* footer */
