@@ -75,13 +75,15 @@ body{
 
 a{
 	text-decoration: none;
+	display: inline-block;
 
 }
 
 img{
 	/*max-width: 100%;*/
 	height: auto;
-	display: block;
+	/*display: block;*/
+	vertical-align: middle;/*消除圖片下方空隙*/
 }
 
 .w-50{
@@ -166,17 +168,16 @@ img{
 .header-subtitle{
 	font-size: 128px;
 	color: #00FFA3;
-	font-family: Bruno Ace SC;
+	text-align: right;
+	
 
 }
 
 .header-btn {
 	background:#FFFFFF;
-	width: 185px;
 	border-radius: 32px;
-	justify-content: center;
-	gap: 4px;
 	padding: 12px 24px;
+	color: #000000;
 	
 }
 
@@ -322,9 +323,10 @@ eader-btn a{
 	padding-bottom: 12px;
 	padding-left: 24px;
 	color: #FFFFFF;
-
-	
 }
 
 
 /* footer */
+.footer-text{
+	text-align: center;
+}
