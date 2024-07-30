@@ -52,20 +52,12 @@ table {
 
 *,*::before,*::after{
     box-sizing: border-box;
-	/*outline: rgb(243, 239, 239) solid 3px;*/
-	
-
 }
 
 body{
     font-family:"Bruno Ace SC", sans-serif;
 	line-height: 1.5;
 	color: #FFFFFF;
-	
-	
-
-
-
 }
 
 .container{
@@ -76,19 +68,19 @@ body{
 a{
 	text-decoration: none;
 	display: inline-block;
-
 }
 
 img{
-	/*max-width: 100%;*/
 	height: auto;
-	/*display: block;*/
 	vertical-align: middle;/*消除圖片下方空隙*/
 }
+
+/*通用樣式*/
 
 .w-50{
 	width: 50%;
 }
+
 .ml-a{
 	margin-left: auto;
 }
@@ -113,8 +105,6 @@ img{
 	font-size: 64px;
 }
 
-
-
 .bg-black{
 	background: #000000;
 }
@@ -127,6 +117,9 @@ img{
 	justify-content: space-between;
 }
 
+.ai-c{
+	align-items: center;
+}
 .g-6{
 	gap: 24px;
 }
@@ -134,26 +127,26 @@ img{
 
 /* nav */
 
-
 .nav-list{
 	justify-content: space-between;
 	align-items: center;
-	
 }
 
 .nav-list a{
 	color: #D1D1D1;
 }
 
+.nav-list a:hover{
+	font-weight: 700;
+}
 
 .nav-list-btn{
 	display: block;
 	width: 278.5px;
 }
 
-
-
 /* header */
+
 .header-img{
 	padding-top: 72px;
 	padding-bottom: 32px;
@@ -164,13 +157,10 @@ img{
 	margin-bottom: 192px;
 }
 
-
 .header-subtitle{
 	font-size: 128px;
 	color: #00FFA3;
 	text-align: right;
-	
-
 }
 
 .header-btn {
@@ -178,29 +168,18 @@ img{
 	border-radius: 32px;
 	padding: 12px 24px;
 	color: #000000;
-	
+	display: inline-block;
+	margin-left: auto;
 }
-
-eader-btn a{
-	display: block;
-	
-	
-}
-	
-
-
-
-
 
 /* intro */
 
 .intro{
 	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true);
 	width: 100%;
-	
-	
+	background-repeat: no-repeat;/*避免背景斷層感*/
+	background-size: cover;/*背景會盡量填滿容器*/
 }
-
 
 .intro-content-text{
 	width: 526px;
@@ -218,22 +197,17 @@ eader-btn a{
 
 .intro-content-img img{
 	width:100% ;
-	
 }
 
-
-
-
 /* about */
+
 .about{
 	color:#15161D ;
 }
 
 .about-list{
 	flex-wrap:wrap ;
-	padding-top: 46px; /*206px-160px(about-text的padding)*/
-	padding-bottom: 46px;
-	
+	width: 636px;
 }
 
 .about-text{
@@ -242,49 +216,56 @@ eader-btn a{
 
 .about-list-item{
 	width: 306px;
+	padding: 16px;
+	box-shadow: 4px 4px 4px 0px #00000014;
+	border: 1px solid #E3E3E3
 }
 
 .about-h4{
 	font-size: 20px;
-
 }
 
 .about-text h3{
 	font-size: 64px;
+	margin-bottom: 36px;
 }
 
 .about-text p{
 	font-size: 24px;
 }
 
-
-
 /* contract */
 
 .contract{
-	background:linear-gradient(to bottom,#050014 100%, #01021EE3 89%);
-	padding-top: 127px;
-	padding-bottom: 127px;
+	background:linear-gradient(rgba(5, 0, 20, 1), rgba(1, 2, 30, 0.89));
+	padding-top: 96px;
+	padding-bottom: 96px;
 }
 
 .contract-text img{
 	width: 100px;
 	height: 100px;
-	
-	
 }
+
 .contract-text{
 	gap: 16px;
 	align-items: center;
 }
 .contract-text p{
 	font-size: 64px;
-
 }
+
 .contract-img {
 	gap: 20px;
 }
 
+.contract-img img{
+	border-radius: 40px;
+}
+.contract-img img:hover{
+	box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9);
+	transition: 1s;/*慢慢發光的秒數*/
+}
 
 /* project */
 
@@ -295,15 +276,11 @@ eader-btn a{
 .project-title{
 	margin-left: 550px;
 	margin-top: 16px;
-	
-
 }
 
 .project-content-text{
 	margin-bottom: 28px;
-
 }
-
 
 .project-content-p{
 	flex-direction: column;
@@ -314,19 +291,16 @@ eader-btn a{
 	border-radius: 32px;
 	background: #000000;
 	gap: 4px;
-
 }
 
 .project-content-btn a{
 	display: block;
-	padding-top: 12px;
-	padding-bottom: 12px;
-	padding-left: 24px;
 	color: #FFFFFF;
+	padding: 12px 12px 12px 24px;
 }
 
-
 /* footer */
+
 .footer-text{
 	text-align: center;
 }
